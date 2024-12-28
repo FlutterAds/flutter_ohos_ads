@@ -1,0 +1,32 @@
+name: flutter_ohos_ads
+description: "一款优质的 Flutter 鸿蒙广告插件，帮助你在鸿蒙平台快速变现"
+version: 1.0.0
+homepage: https://flutterads.top
+repository: https://github.com/FlutterAds/flutter_ohos_ads
+issue_tracker: https://github.com/FlutterAds/flutter_ohos_ads/issues
+documentation: https://github.com/FlutterAds/flutter_ohos_ads/wiki
+topics: [flutterads, ads, harmonyos, huawei, income]
+funding: [https://github.com/FlutterAds/.github]
+
+environment:
+  sdk: ">=2.12.0 <4.0.0"
+  flutter: ">=1.20.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.zero.flutter_ohos_ads
+        pluginClass: FlutterOhosAdsPlugin
