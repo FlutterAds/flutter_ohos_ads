@@ -7,13 +7,13 @@ import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 class MockFlutterOhosAdsPlatform
     with MockPlatformInterfaceMixin
     implements FlutterOhosAdsPlatform {
-
   @override
   Future<String?> getPlatformVersion() => Future.value('42');
 }
 
 void main() {
-  final FlutterOhosAdsPlatform initialPlatform = FlutterOhosAdsPlatform.instance;
+  final FlutterOhosAdsPlatform initialPlatform =
+      FlutterOhosAdsPlatform.instance;
 
   test('$MethodChannelFlutterOhosAds is the default instance', () {
     expect(initialPlatform, isInstanceOf<MethodChannelFlutterOhosAds>());
